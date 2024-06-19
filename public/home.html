@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content= "Prioritize your mental health at Kenyatta University with Mind Over Matter. Join our club for a supportive community and access to valuable resources.">
+  <title>Mind Over Matter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/icon.png" alt="ICON" class="icon" loading="lazy">
+      <nav>
+        <a href="/public/home.html">Mind Over Matter</a>
+        <a href="/public/about.html">About</a>
+        <a href="#" onclick= "alert('Events Coming Soon!');">Events</a>
+        <a href="#contact-form">Contact Us</a>
+        <a href="#" onclick= "alert('Blog Coming Soon!');">Blog</a>
+        
+      </nav>
+    </div>
+    <div class="navbar-mobile" id="navbar">
+      <div class="nav-items nav-active">
+        <a class="close-btn-mobile">Close</a>
+        <a href="/public/home.html">Mind Over Matter</a>
+        <a href="/public/about.html">About</a>
+        <a href="#" onclick= "alert('Events Coming Soon!');">Events</a>
+        <a href="#contact-us">Contact Us</a>
+        <button class="icon" onclick="toggleNavbar()">&#9776;</button>
+      </nav>
+    </div>
+    </div>           
+   
+  </header>
+
+  
+    <div class="container">
+        <div class="card">
+            <img src="/images/image1.jpg" alt="image1" loading="lazy">
+            <h2>Mind Over Matter is a mental health organisation within Kenyatta University School of Medicine. We are dedicated to promoting the mental well being of medical students throughout their academic journey.</h2>    
+        </div>
+    </div>
+
+    
+
+  <section class="about">
+    <h1>About Us</h1>
+    <h3>We strive to create a community of professionals with the mental resources to lead successful lives.</h3>
+    <a href="/public/about.html">Learn More</a>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <img src="images/image2.jpeg" alt="image2" loading="lazy">
+      <h2>MOM is committed to providing a safe and supportive space for students to discuss their mental issues</h2>
+    </div>
+   </div>
+
+  <div class="members">
+   <h3>Current Members : <span id="memberCount">0</span></h3><br>
+   <button type="button" class="button" onclick="window.open('https://forms.gle/52RqdP7FGUTa4qYq6', '_blank')">Become a member</button>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <h2>Follow us on our social media platforms</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/mind_over_matter.med?igsh=MXUwNmx6Z3hjMWc5dw==" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href=""><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href=""><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://wa.me/254704580422" rel="noopener noreferrer" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-form" id="contact-us">
+        <h2>Send us an email</h2><br>
+        <form action="/submit" method="post" id="dataForm" >
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name"><br><br>
+          <label for="email">Your Email Address:</label>
+          <input type="email" name="email" id="email" ><br><br>
+          <textarea name="message" id="message" placeholder="Message"></textarea><br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <p>&copy; 2024 Mind Over Matter</p>
+  </footer>
+
+  <script>
+    //counting members
+    const memberCountElement = document.getElementById('memberCount');
+    const  finalCount = 70;
+    let currentCount = 0;
+
+    function countMembers(){
+        if(currentCount <= finalCount){
+            memberCountElement.textContent = currentCount;
+            currentCount++;
+            setTimeout(countMembers, 40);
+        }
+    }
+    countMembers();
+  </script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+
+/* Header */
+header {
+    color: #555;
+    padding: 20px 0;
+    text-align: justify;
+  }
+  
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+header nav {
+    display: flex;
+    gap: 20px;
+  
+  }
+  
+header nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    color: black;
+    cursor: pointer;
+  }
+
+header nav a:hover {
+    background-color: #0c0c0c;
+    color: sienna;
+}
+
+nav .icon{
+  display: block;
+}
+
+.icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 0 10px;
+  
+  }
+
+  /* Media query for mobile devices */
+@media screen and (max-width: 730px) {
+    .navbar-mobile {
+        display: block;
+    }
+}
+
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    display: none;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-mobile .nav-items {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 1s;
+  width: 100%;
+}
+
+.nav-active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  transform: translate(0, 0);
+}
+.nav-items .icon {
+  position: absolute;
+  right: 0;
+  width: 40px;
+  background: none;
+  border: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.main{
+    margin-left: 10px;
+    align-items: start;
+  }
+ 
+  
+.container .card {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+.card h2{
+    text-align: center;
+  }
+
+.card img {
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 8px;
+    object-position: top;
+    object-fit: cover;
+    border-radius: 20px;
+
+  }
+  
+  
+  /* About Us */
+.about {
+  text-align: center;
+  padding: 50px 0;
+  background-color: azure;
+  margin-top: -20px;
+  }
+  
+.about h2 {
+    color: #333;
+  }
+  
+.about p {
+    color: #555;
+  }
+  
+.about a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+.about a:hover {
+    background-color: #45a049;
+  }
+
+.members{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 100px;
+}
+
+.members h3{
+color: rgba(13, 105, 105, 0.884);
+}
+
+.members button{
+  width: 300px;
+  position: relative;
+  bottom: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: sienna;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.members button:hover{
+color: #0a0a0a;
+background-color: #45a049;;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px;
+  }
+  
+footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Social Media */
+.social-media {
+    flex: 1;
+  }
+  
+.social-media h2 {
+    margin-bottom: 20px;
+  }
+  
+.social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+.social-media li {
+    margin-bottom: 10px;
+  }
+  
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* Contact Form */
+.contact-form {
+    flex: 1;
+  }
+  
+.contact-form h3 {
+    margin-bottom: 20px;
+  }
+  
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+.contact-form input,
+  .contact-form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+.contact-form textarea {
+    height: 100px;
+  }
+  
+.contact-form button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+.contact-form button:hover {
+    background-color: sienna;
+  }
+
+
+.objectives-section{
+    background-color: azure;
+    margin: 15px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+.objectives-section h1{
+  text-align: center
+}
+
+.objectives-section .objective1{
+  text-align: end;
+  margin-right: 10px;
+}
+
+.objective1 img{
+  border-radius: 20px;
+  padding-right: 10px;
+  position: relative;
+  bottom: 40px;
+  float: left;
+}
+
+.objectives-section .objective2{
+  text-align: start;
+  margin-top: 10px;
+}
+
+.objective2 img{
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 10px;
+  position: relative;
+  bottom: 40px;
+  float: right;
+
+}
+
+.objective3{
+  text-align: right;
+  margin-right: 10px;
+}
+  
+
+.objective3 img{
+  width: 300px;
+  height: 200px;
+  float: left;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+}
+.objective4 img{
+  width: 300px;
+  height: 200px;
+  float: right;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+.objective5 img{
+  width: 300px;
+  height: 200px;
+  float: left;
+  border-radius: 20px;
+  position: relative;
+  bottom: 30px;
+}
+
+.objective6 img{
+  width: 300px;
+  height: 200px;
+  float: right;
+  border-radius: 20px;
+  bottom: 80px;
+}
+
+.objectives-section .objective5{
+  text-align: right;
+  margin-right: 10px;
+}
+
+.join-us{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+.join-us button{
+    background-color: sienna;
+    color: #0c0c0c;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+
+  }
+
+.join-us button:hover{
+    background-color: wheat;
+  }
+
+.copyright{
+    text-align: center;
+  }
+
+.row1{
+  background-image: url(images/img5.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  
+}
+.column1{
+  flex: 50%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.column1 ul{
+  list-style-type: none;
+  display: block;
+  position: relative;
+  top: 45px;
+  left: 80px;
+  color: rgb(43, 15, 1);
+}
+
+.column2{
+  flex: 50%;
+  position: relative;
+  top: 100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+
+    
